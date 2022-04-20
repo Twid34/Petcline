@@ -6,7 +6,7 @@
   <body>
   
   
-    <h2>Owner Information</h2>
+    <h2>Informacion de Propetario</h2>
   
   
     <table class="table table-striped" th:object="${owner}">
@@ -15,15 +15,15 @@
         <td><b th:text="*{firstName + ' ' + lastName}"></b></td>
       </tr>
       <tr>
-        <th>Address</th>
+        <th>Direccion</th>
         <td th:text="*{address}" /></td>
       </tr>
       <tr>
-        <th>City</th>
+        <th>Ciudad</th>
         <td th:text="*{city}" /></td>
       </tr>
       <tr>
-        <th>Telephone</th>
+        <th>Telefono</th>
         <td th:text="*{telephone}" /></td>
       </tr>
     </table>
