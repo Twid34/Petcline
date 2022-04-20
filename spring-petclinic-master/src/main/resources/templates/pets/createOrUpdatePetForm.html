@@ -17,7 +17,7 @@
         </div>
       </div>
       <input
-        th:replace="~{fragments/inputField :: input ('Name', 'name', 'text')}" />
+        th:replace="~{fragments/inputField :: input ('Nombre', 'name', 'text')}" />
       <input
         th:replace="~{fragments/inputField :: input ('Birth Date', 'birthDate', 'date')}" />
       <input
@@ -26,7 +26,7 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <button
-          th:with="text=${pet['new']} ? 'Add Pet' : 'Update Pet'"
+          th:with="text=${pet['new']} ? 'agregar Pet' : 'actulizar Pet'"
           class="btn btn-default" type="submit" th:text="${text}">Add
           Pet</button>
       </div>
