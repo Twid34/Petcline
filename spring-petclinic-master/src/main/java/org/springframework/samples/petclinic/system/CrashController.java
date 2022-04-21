@@ -30,8 +30,8 @@ class CrashController {
 
     @GetMapping("/oups")
     public String triggerException() {
-        throw new RuntimeException("Expected: controller used to showcase what "
-                + "happens when an exception is thrown");
+        throw new RuntimeException("Esperado: controlador utilizado para mostrar lo que "
+                + "sucede cuando se lanza una excepción");
     }
 
 }
