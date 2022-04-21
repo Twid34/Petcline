@@ -15,12 +15,12 @@
       <input
         th:replace="~{fragments/inputField :: input ('Ciudad', 'city', 'text')}" />
       <input
-        th:replace="~{fragments/inputField :: input ('Telepono', 'telephone', 'text')}" />
+        th:replace="~{fragments/inputField :: input ('Telefono', 'telephone', 'text')}" />
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <button
-          th:with="text=${owner['new']} ? 'Agragar Propetario' : 'Actualizar Propetario'"
+          th:with="text=${owner['new']} ? 'Agregar Propetario' : 'Actualizar Propetario'"
           class="btn btn-default" type="submit" th:text="${text}">Añadir
           Propetario</button>
       </div>
