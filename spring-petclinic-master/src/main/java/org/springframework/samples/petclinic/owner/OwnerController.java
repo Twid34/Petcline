@@ -98,6 +98,26 @@ class OwnerController {
             return "owners/ownersList";
         }
     }
+    @GetMapping("/owners/List")
+    public String processlist(Owner owner, BindingResult result, Map<String, Object> model) {
+
+        Collection<Owner> results = this.owners.findAll();
+
+            // multiple owners found
+            model.put("selections",results);
+            return "owners/ownersListContry";
+
+    }
+    @GetMapping("/owners/PetsList")
+    public String processpetlist(Owner owner, BindingResult result, Map<String, Object> model) {
+
+        Collection<Owner> results = this.owners.findAll();
+
+        // multiple owners found
+        model.put("selections",results);
+        return "owners/PetsList";
+
+    }
 
     @GetMapping("/owners/{ownerId}/edit")
     public String initUpdateOwnerForm(@PathVariable("ownerId") int ownerId, Model model) {
