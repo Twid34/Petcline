@@ -48,21 +48,31 @@
                       <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                       <span>Home</span>
                   </li>
+
   
                   <li th:replace="::menuItem ('/owners/find','owners','find owners','search','Propetario')">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                       <span>Find owners</span>
                   </li>
   
-                  <li th:replace="::menuItem ('/vets.html','vets','veterinarians','th-list','Veterinaria')">
+                  <li th:replace="::menuItem ('/vets.html','vets','veterinarians','th-list','Veterinarios')">
                       <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
                       <span>Veterinarians</span>
+                  </li>
+                  <li th:replace="::menuItem ('/owners/List','owners','Lista','th-list','Propietarios')">
+                      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                      <span>Find owners</span>
+                  </li>
+                  <li th:replace="::menuItem ('/owners/PetsList','owners','Mascotas','th-list','Macotas')">
+                      <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+                      <span>Find owners</span>
                   </li>
   
                   <li th:replace="::menuItem ('/oups','error','trigger a RuntimeException to see how it is handled','warning-sign','Error')">
                       <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
                       <span>Error</span>
                   </li>
+
   
               </ul>
           </div>
